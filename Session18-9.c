@@ -41,14 +41,13 @@ int main(){
                     getchar();
                     printf("Nhap ten mon an: ");
                     fgets(newDish.name, 50, stdin);
-                    newDish.name[strcspn(newDish.name, "\n")] = 0; // Xoa ky tu \n
+                    newDish.name[strcspn(newDish.name, "\n")] = 0; 
                     printf("Nhap gia: ");
                     scanf("%f", &newDish.price);
 
                     dishMenu[menuSize++] = newDish;
                     printf("Them mon an thanh cong\n");
 
-                    // In danh sach sau khi them
                     printf("\nDanh sach mon an sau khi them:\n");
                     for (int i = 0; i < menuSize; i++) {
                         printf("%d. %s: %.f\n", dishMenu[i].id, dishMenu[i].name, dishMenu[i].price);

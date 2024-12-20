@@ -136,6 +136,7 @@ int main(){
             }
             case 7: {
                 printf("Thoat chuong trinh\n");
+		printf("Vui long nhan Enter");
                 break;
             }
             default:
